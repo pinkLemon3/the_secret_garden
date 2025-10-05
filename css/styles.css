@@ -5,8 +5,14 @@ body {
 }
 
 
+.header,
+.hero-section,
+.top-site footer {
+    width: 100%;
+}
 
 
+/* Page container- content */
 
 .page-container {
     display: flex;
@@ -14,27 +20,34 @@ body {
     background-color: white;
 }
 
+/* Header plus hero section */
+
+.top-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Header section */
 .header {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     background-color: #1F2937;
-    width: 100%;
-    padding: 20px;
-
 }
 
 .navigation-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .logo-image {
-    width: 150px;
+    width: 130px;
     border: 5px green solid;
     border-radius: 50%;
     background-color: #E5E7EB;
+    margin-top: 30px;
 }
 
 li {
@@ -50,20 +63,13 @@ a {
     color: #E5E7EB;
 }
 
-
-#flower-shop {
-    width: 600px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-
-
 /* Hero section */
 .hero-section {
     display: flex;
     justify-content: space-around;
     background-color: #1F2937;
+    align-items: center;
+    width: 100%;
 }
 
 h1 {
@@ -77,31 +83,56 @@ h1 {
     color: #E5E7EB;
 }
 
+.hero-text {
+    margin-left: 30px;
+}
+
+
+#flower-shop {
+    width: 600px;
+    height: 400px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
 
 /* Card section */
 .card-section {
     display: flex;
     flex-direction: column;
+    margin: 25px;
+    padding: 20px;
 }
 
 .img-cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    margin: 20px;
 }
 
 .card img {
-    width: 400px;
-    border: 2px solid green;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid green
+}
+
+.card p {
+    text-align: center;
 }
 
 
 /* Call to action */
 
 .cta-container {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 50px;
 }
 
 
@@ -111,6 +142,11 @@ justify-content: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 8px;
+}
+
+.text {
+    color: white;
 }
 
 button {
@@ -123,7 +159,7 @@ button {
 }
 
 
-/* Quote ssection */
+/* Quote section */
 
 .quote {
     background-color: #E5E7EB;
@@ -144,14 +180,18 @@ blockquote {
     font-size: 20px;
     font-weight: bold;
     font-style: normal;
+    text-align: right;
 }
 
 
 /* Footer section */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1F2937;
     width: 100%;
+    height: 100px;
 }
 
 
@@ -165,4 +205,10 @@ p {
 
 h2 {
     text-align: center;
+    margin: 30px;
+    padding: 10px;
+}
+
+ul {
+    margin-right: 30px;
 }
