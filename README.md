@@ -10,7 +10,7 @@ As a visitor to The Secret Garden website,
 I want to learn about the shop’s services, view beautiful flower arrangements, and be inspired to sign up for offers or make a purchase.
 
 ### Features
-Clean, modern design with a nature-inspired color palette 🌿
+Clean, modern design with a nature-inspired color palette 
 
 Responsive layout built with Flexbox
 
