@@ -1,54 +1,80 @@
 body {
     font-family: "Roboto", sans-serif;
-    box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 
-
-#flower-shop {
-    width: 600px;
-}
 
 
 
 .page-container {
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 /* Header section */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    background-color: #96cbbb;
+    background-color: #1F2937;
+    width: 100%;
+    padding: 20px;
+
 }
 
 .navigation-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .logo-image {
-    width: 120px;
-    border: 2px green solid;
+    width: 150px;
+    border: 5px green solid;
     border-radius: 50%;
+    background-color: #E5E7EB;
 }
 
 li {
     list-style: none;
+    padding: 10px;
+    margin: 10px;
 }
+
 
 a {
     text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
 }
+
+
+#flower-shop {
+    width: 600px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
 
 
 /* Hero section */
 .hero-section {
     display: flex;
-    justify-content: space-between;
-    background-color: #96cbbb;
+    justify-content: space-around;
+    background-color: #1F2937;
+}
+
+h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero-small-text {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 
@@ -61,6 +87,8 @@ a {
 .img-cards {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card img {
@@ -70,16 +98,71 @@ a {
 
 
 /* Call to action */
+
+.cta-container {
+display: flex;
+justify-content: center;
+}
+
+
 .cta {
-    background-color: green;
+    width: 800px;
+    background-color: #3882F6;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+button {
+    color: white;
+    background-color: #3882F6;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10%;
+    border: 1px #E5E7EB solid;
+}
+
+
+/* Quote ssection */
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+blockquote {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
 }
 
 
 /* Footer section */
 footer {
     text-align: center;
-    background-color: #96cbbb;
+    background-color: #1F2937;
+    width: 100%;
+}
+
+
+#copy-txt {
+    color: #E5E7EB;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    text-align: center;
 }
